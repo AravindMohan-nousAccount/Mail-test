@@ -14,5 +14,5 @@ jobs:
         run: |
              echo "'new items are pushed to the main branch test 1 ',${{github.ref}}"  
              echo "'github user :' ,{{github.actor}}"
-             echo "'github repository',{{}github.repository}"
+             echo "'github repository',{{github.repository}}"
     
