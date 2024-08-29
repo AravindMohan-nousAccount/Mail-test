@@ -12,7 +12,14 @@ jobs:
 
       - name: job2
         run: |
-             echo "'new items are pushed to the main branch test 1 ',${{github.ref}}"  
-             echo "'github user :' ,${{github.actor}}"
-             echo "'github repository',${{github.repository}}"
+             echo "'new items are pushed to the main branch test 1 ',${{github.ref}}" >> output.txt  
+             echo "'github user :' ,${{github.actor}}" >> output.txt
+             echo "'github repository',${{github.repository}}" >> output.txt
+      - name: job3
+        uses: actions/upload-artifact@v3
+        with:
+         name: job2-logs
+         path: output.txt 
+        
+        
     
