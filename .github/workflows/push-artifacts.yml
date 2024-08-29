@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: job1
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
 
       - name: job2
         run: echo"'new items are pushed to the main branch test 1'"  
