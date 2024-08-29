@@ -20,6 +20,12 @@ jobs:
         with:
          name: job2-logs
          path: output.txt 
+
+      - name: job12
+        uses: actions/download-artifact@v3
+        with:
+          name: job2-logs
+          path: ./downloadss
         
         
     
