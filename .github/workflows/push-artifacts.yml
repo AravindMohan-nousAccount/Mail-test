@@ -18,7 +18,7 @@ jobs:
           echo "'github repository:', ${{github.repository}}" >> output.txt
 
       - name: job3
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: job2-logs
           path: output.txt 
