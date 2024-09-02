@@ -34,7 +34,7 @@ jobs:
           path: ./downloads
 
       - name: Display All Contents
-        run: cat ./downloads/output.txt
+        run: cat output.txt
            
         
         
