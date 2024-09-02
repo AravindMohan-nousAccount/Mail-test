@@ -34,8 +34,7 @@ jobs:
           name: job2-logs
           path: ./downloads
 
-      - name: Display All Contents
-        run: cat output.txt
+      
            
         
         
