@@ -13,6 +13,7 @@ jobs:
 
       - name: job2
         run: |
+          touch output.txt
           echo "'new items are pushed to the main branch test 1', ${{github.ref}}" >> output.txt  
           echo "'github user:', ${{github.actor}}" >> output.txt
           echo "'github repository:', ${{github.repository}}" >> output.txt
